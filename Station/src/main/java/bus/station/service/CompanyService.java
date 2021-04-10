@@ -8,5 +8,6 @@ public interface CompanyService {
 	
 	Company findOne(Long id);
 	List<Company> findAll();
+	Company save(Company company);
 
 }

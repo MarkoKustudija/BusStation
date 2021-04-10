@@ -12,7 +12,7 @@ public interface ReservationRepository extends JpaRepository<Reservation, Long> 
 
 	Reservation findOneById(Long id);
 
-	List<Reservation> findByIdin(List<Long> idReservations);
+	List<Reservation> findByIdIn(List<Long> idS);
 	
 
 }

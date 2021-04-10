@@ -25,5 +25,10 @@ public class JpaCompanyService  implements CompanyService  {
 		return companyRepository.findAll();
 	}
 
+	@Override
+	public Company save(Company company) {
+		return companyRepository.save(company);
+	}
+
 	
 }

@@ -26,8 +26,8 @@ public class JpaReservationService implements ReservationService{
 	}
 
 	@Override
-	public List<Reservation> find(List<Long> idReservations) {
-		return reservationRepository.findByIdin(idReservations);
+	public List<Reservation> find(List<Long> idS) {
+		return reservationRepository.findByIdIn(idS);
 	}
 	
 

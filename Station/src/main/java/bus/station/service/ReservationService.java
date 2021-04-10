@@ -8,7 +8,7 @@ public interface ReservationService {
 	
 	Reservation findOne(Long id);
 	List<Reservation> findAll();
-	List<Reservation> find(List<Long> idReservations);
+	List<Reservation> find(List<Long> idS);
 	
 	
 
