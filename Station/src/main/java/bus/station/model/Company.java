@@ -71,6 +71,15 @@ public class Company {
 	public void setTimetables(Set<Timetable> timetables) {
 		this.timetables = timetables;
 	}
+
+	public void removeTimetable(Long id) {
+		for(Timetable t : this.timetables) {
+		if(t.getId() == id) {
+			this.timetables.remove(t);
+			return;
+		}	
+		}
+	}
 	
 	
 	
