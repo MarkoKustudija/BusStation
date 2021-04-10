@@ -24,6 +24,11 @@ public class JpaReservationService implements ReservationService{
 	public List<Reservation> findAll() {
 		return reservationRepository.findAll();
 	}
+
+	@Override
+	public List<Reservation> find(List<Long> idReservations) {
+		return reservationRepository.findByIdin(idReservations);
+	}
 	
 
 }
